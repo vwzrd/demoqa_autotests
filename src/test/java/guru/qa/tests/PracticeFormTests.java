@@ -18,7 +18,7 @@ public class PracticeFormTests {
     }
 
     @Test
-    void FillPracticeForm() {
+    void fillPracticeForm() {
 
         //Вводим значения в поля
         registrationFormPage.openPage()
