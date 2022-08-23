@@ -1,21 +1,13 @@
 package guru.qa.tests;
 
 
-import com.codeborne.selenide.Configuration;
 import guru.qa.pages.RegistrationFormPage;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 
-public class PracticeFormTests {
+public class PracticeFormTests extends TestBase {
 
     RegistrationFormPage registrationFormPage = new RegistrationFormPage();
-
-    @BeforeAll
-    static void setUp() {
-        Configuration.browserSize = "1920x1080";
-        Configuration.baseUrl = "https://demoqa.com";
-    }
 
     @Test
     void fillPracticeForm() {
