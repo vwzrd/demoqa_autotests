@@ -51,7 +51,7 @@ public class PracticeFormTestsWithFaker extends TestBase {
 
         //Проверяем открывшуюся форму
         registrationFormPage.checkResultsTableVisible()
-                .checkResult("Student Name", firstName + " " + lastName)
+                .checkResult("Student Name", String.format("%s %s", firstName, lastName))
                 .checkResult("Student Email", email)
                 .checkResult("Gender", gender)
                 .checkResult("Mobile", phoneNumber)
